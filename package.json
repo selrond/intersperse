@@ -2,13 +2,13 @@
   "name": "@selrond/intersperse",
   "version": "0.1.0",
   "description": "Inserts an item between array elements",
-  "source": "index.js",
+  "source": "src/index.js",
   "main": "dist/index.js",
-  "module": "dist/index.module.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "microbundle",
-    "dev": "microbundle watch"
+    "dev": "microbundle watch",
+    "format": "prettier src"
   },
   "files": [
     "dist"
@@ -37,5 +37,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "microbundle": "^0.13.0",
     "prettier": "2.2.1"
+  },
+  "dependencies": {
+    "type-detect": "^4.0.8"
   }
 }
