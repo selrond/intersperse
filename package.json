@@ -9,7 +9,8 @@
     "build": "microbundle",
     "build:standalone": "microbundle --external none --output dist/standalone",
     "dev": "microbundle watch",
-    "format": "prettier src"
+    "format": "prettier src",
+    "release": "np"
   },
   "files": [
     "dist"
