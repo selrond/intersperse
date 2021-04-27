@@ -1,6 +1,6 @@
 {
   "name": "@selrond/intersperse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Inserts an item between array elements",
   "source": "src/index.js",
   "main": "dist/intersperse.js",
