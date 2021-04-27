@@ -5,7 +5,7 @@
   "source": "src/index.js",
   "main": "dist/intersperse.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"TODO: create tests\"",
     "build": "microbundle",
     "build:standalone": "microbundle --external none --output dist/standalone",
     "dev": "microbundle watch",
