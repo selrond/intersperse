@@ -10,7 +10,8 @@
     "build:standalone": "microbundle --external none --output dist/standalone",
     "dev": "microbundle watch",
     "format": "prettier src",
-    "release": "npm run build && npm run build:standalone && np"
+    "release": "npm run build && npm run build:standalone && np",
+    "prepare": "husky install"
   },
   "files": [
     "dist"
@@ -37,11 +38,16 @@
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "microbundle": "^0.13.0",
     "np": "^7.5.0",
     "prettier": "2.2.1"
   },
   "dependencies": {
     "type-detect": "^4.0.8"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
