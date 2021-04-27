@@ -10,7 +10,7 @@
     "build:standalone": "microbundle --external none --output dist/standalone",
     "dev": "microbundle watch",
     "format": "prettier src",
-    "release": "np"
+    "release": "npm run build && npm run build:standalone && np"
   },
   "files": [
     "dist"
