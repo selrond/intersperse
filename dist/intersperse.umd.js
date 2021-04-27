@@ -1,2 +1,0 @@
-!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports,require("type-detect")):"function"==typeof define&&define.amd?define(["exports","type-detect"],t):t((e||self).intersperse={},e.typeDetect)}(this,function(e,t){function n(e){return e&&"object"==typeof e&&"default"in e?e:{default:e}}var r=n(t);e.intersperse=function(e,t){if(!Array.isArray(e))throw TypeError(`I can't work with ${r.default(e)}`);return e.reduce((e,n,r,o)=>[...e,n,...r+1===o.length?[]:[t]],[])}});
-//# sourceMappingURL=intersperse.umd.js.map
